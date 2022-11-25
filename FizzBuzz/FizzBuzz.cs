@@ -1,9 +1,23 @@
-﻿namespace FizzBuzz;
+﻿using System.Text;
+
+namespace FizzBuzz;
 
 public static class FizzBuzz
 {
     public static string Resolve(int input)
     {
-        return input % 3 == 0 ?"Fizz" : "Buzz";
+        var sb = new StringBuilder();
+
+        if (input % 3 == 0)
+        {
+            sb.Append("Fizz");
+        }
+
+        if (input % 5 == 0)
+        {
+            sb.Append("Buzz");
+        }
+
+        return sb.Length == 0 ? input.ToString() : sb.ToString();
     }
 }
