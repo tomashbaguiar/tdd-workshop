@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NGneZ5JTZK+kca8lWyjGHQx53/DhCF63Z7Ejsa0VNLqneEkSQ/KEYssMfZBWzmTAKEGysW3aGtU8DR7Zp8yqPw==",
+  "success": true,
+  "projectFilePath": "/home/tomas/Documents/CSharp/tdd-workshop/FizzBuzz/FizzBuzz.csproj",
+  "expectedPackageFiles": [
+    "/home/tomas/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.10/microsoft.aspnetcore.app.ref.6.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
