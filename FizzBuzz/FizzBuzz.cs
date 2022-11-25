@@ -4,6 +4,6 @@ public static class FizzBuzz
 {
     public static string Resolve(int input)
     {
-        return "Fizz";
+        return input % 3 == 0 ?"Fizz" : "Buzz";
     }
 }
