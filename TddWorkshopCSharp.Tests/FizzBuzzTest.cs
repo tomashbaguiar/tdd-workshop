@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace FizzBuzz.Tests;
+namespace TddWorkshopCSharp.Tests;
 
 public class FizzBuzzTest
 {

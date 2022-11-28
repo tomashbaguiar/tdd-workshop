@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace FizzBuzz;
+namespace TddWorkshopCSharp;
 
 public static class FizzBuzz
 {
@@ -9,7 +9,7 @@ public static class FizzBuzz
         var sb = new StringBuilder();
 
         if (input % 3 == 0) sb.Append("Fizz");
-        if (input % 5 == 0) sb.Append("Buzz");}
+        if (input % 5 == 0) sb.Append("Buzz");
 
         return sb.Length == 0 ? input.ToString() : sb.ToString();
     }
