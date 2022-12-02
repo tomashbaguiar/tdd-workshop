@@ -34,10 +34,24 @@ public class RockPaperScissorsTest
         
         Assert.Equal(expected, result);
     }
-
-    [Fact]
-    public void Play_WhenGesturesAreInvalid_ThrowsArgumentOutOfRangeException()
+    
+    [Theory]
+    [InlineData("Scissors", "Scissors", "Draw")]
+    [InlineData("Rock", "Rock", "Draw")]
+    [InlineData("Paper", "Paper", "Draw")]
+    public void Play_WhenGesturesAreTheSame_ReturnsDraw(string gesture1, string gesture2, string expected)
     {
-        Assert.Throws<ArgumentOutOfRangeException>(() => RockPaperScissors.Play(string.Empty, string.Empty));
+        var result = RockPaperScissors.Play(gesture1, gesture2);
+        
+        Assert.Equal(expected, result);
+    }
+
+    [Theory]
+    [InlineData("something-1", "something-2")]
+    [InlineData("", "")]
+    [InlineData(null, null)]
+    public void Play_WhenGesturesAreInvalid_ThrowsArgumentOutOfRangeException(string gesture1, string gesture2)
+    {
+        Assert.Throws<ArgumentOutOfRangeException>(() => RockPaperScissors.Play(gesture1, gesture2));
     }
 }
